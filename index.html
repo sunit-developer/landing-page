@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <!-- Add 'Roboto' fonts from Google (Step 1 - To tell the browser where to find and download the Roboto font from Google Fonts.)-->
+    <!-- Add 'Roboto' fonts from Google Fonts -->
+    <!-- Step 1 - To tell the browser where to find and download the Roboto font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Specify the Roboto font family in multiple styles -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link to the external stylesheet for styles -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                Header Logo
+    <!-- Wrapper to ensure the background color spans the full viewport width -->
+    <div class="page-background">
+        <!-- Container to center the content horizontally -->
+        <div class="page-container">
+            <!-- Wrapper for header and hero section -->
+            <div class="hero__header-wrapper">
+                <!-- Header section -->
+                <header class="hero">
+                    <!-- Navigation logo -->
+                    <div class="nav__logo">Header Logo</div>
+                    <!-- Navigation bar with links -->
+                    <nav class="nav__bar">
+                        <ul class="nav__links">
+                            <li class="nav__link">header link one</li>
+                            <li class="nav__link">header link two</li>
+                            <li class="nav__link">header link three</li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- Hero section -->
+                <section class="hero">
+                    <!-- Hero content: heading, subtext, and button -->
+                    <div class="hero__content">
+                        <!-- Main heading -->
+                        <h1 class="hero__heading">This website is awesome</h1>
+                        <!-- Subtext with additional information -->
+                        <p class="hero__subtext">
+                            This website has some subtext that goes here under the main title. It's a smaller font and
+                            the color
+                            is lower contrast
+                        </p>
+                        <!-- Call-to-action button -->
+                        <button type="button" class="button--primary"> Sign up </button>
+                        <!-- Note: This button triggers a custom action, not a form submission -->
+                    </div>
+
+                    <!-- Placeholder for hero image -->
+                    <div class="hero__image-placeholder">
+                        this is a placeholder for an image
+                    </div>
+                </section>
             </div>
-        
-            <ul class="nav-links">
-                <li class="nav-link">header link one</li>
-                <li class="nav-link">header link two</li>
-                <li class="nav-link">header link three</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="main-heading">
-                This website is awesome
-            </h1>
-            <p class="sub-text">
-                This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast
-            </p>
-            <div class="hero-image-placeholder">
-                this is a placeholder for an image
-            </div>
-            <button type="button" class="sign-up"> Sign up </button> <!-- This button is not submitting a form, but rather triggering a custom action -->
         </div>
-    </section>
+    </div>
 </body>
+
 </html>

@@ -1,4 +1,120 @@
+/* CSS Reset to remove browser's default margin, padding, box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    /* Ensures padding and borders are included within the element's width and height */
+    box-sizing: border-box; 
+}
+
 /* Step 2 - To apply 'Roboto' fonts throughout the project */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+/* Reset list styling and create a horizontal navigation layout*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+/* Styling for the header section */
+header {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Background styling to extend throughout the viewport */
+/* GOOD PRACTICE: Allows the background to span the full width of the viewport */
+.page-background {
+    background-color: #1F2937; 
+    width: 100%; /* Extends the background to the full viewport width */
+}
+
+/* Container for consistent horizontal centering across all sections */
+/* GOOD PRACTICE: Keeps layout responsive and horizontally centered */
+.page-container {
+    max-width: 2200px; /* Controls the maximum width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 30px 150px; /* Avoids fixed height, letting content define section heights naturally */
+}
+
+/* Wrapper for header and hero section */
+.hero__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* Hero section layout */
+/* Displays content in two sections: text and image placeholder */
+section.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+/* Logo styling for the navigation bar */
+.nav__logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+/* Styling for navigation links and subtext in the hero section */
+.nav__links, .hero__subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Subtext styling for the hero section */
+.hero__subtext {
+    width: 80%;
+}
+
+/* Main heading styling for the hero section */
+.hero__heading {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    width: 80%;
+}
+
+/* Primary button styling */
+/* GOOD PRACTICE: Resets default styles and applies custom styles */
+button.button--primary {
+    all: unset; /* Removes default browser styles */
+    text-align: center; /* Centers button text */
+    width: 25%;
+    background-color: #3882F6;
+    color: white;
+    font-size: large;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Content wrapper styling for the hero section */
+/* Displays content vertically with appropriate spacing */
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%; /* GOOD PRACTICE: Avoids setting fixed width. Sets the content width relative to its parent (Responsive design) */
+    justify-content: space-between;
+    gap: 10px; /* Adds vertical spacing between items */
+}
+
+/* Placeholder styling for the hero image */
+/* Displays a placeholder box with centered text */
+.hero__image-placeholder {
+    width: 50%; /* Sets width relative to its parent */
+    height: auto; /* Ensures height adjusts dynamically */
+    border: none;
+    font-size: 18px;
+    background-color: #6D747D;
+    color: white;
+    display: flex; /* Centers text within the placeholder */
+    justify-content: center;
+    align-items: center;
 }
