@@ -35,7 +35,7 @@ header {
     /* Extends the background to the full viewport width */
 }
 
-/* Container for consistent horizontal centering across all sections */
+/* Container for consistent horizontal centering across the header & hero sections */
 /* GOOD PRACTICE: Keeps layout responsive and horizontally centered */
 .header-hero__wrapper-horizontal {
     max-width: 2200px;
@@ -131,9 +131,70 @@ button.button--primary {
     align-items: center;
 }
 
-features__title {
-    all: unset;
+/* Background styling to extend throughout the viewport */
+/* GOOD PRACTICE: Allows the background to span the full width of the viewport */
+.features__background {
+    background-color: white;
+    width: 100%;
+    /* Extends the background to the full viewport width */
+}
+
+/* Container for consistent horizontal centering across the features section */
+/* GOOD PRACTICE: Keeps layout responsive and horizontally centered */
+.features__horizontal {
+    max-width: 2200px;
+    /* Controls the maximum width of the content */
+    margin: 0 auto;
+    /* Centers the content horizontally */
+    padding: 30px 150px;
+    /* Avoids fixed height, letting content define section heights naturally */
+}
+
+/* Styling for features section */
+.features {
+    padding-right: 15px;
+    padding-bottom: 75px;
+    padding-left: 15px;
+}
+
+/* Styling for features title */
+.features__title {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Styling for features card container */
+.features__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+    gap: 16px;
+}
+
+/* Styling for features individual card */
+.features__card {
+    width: 175px;
+    height: auto;
+    /* Let the height grow based on content */
+    /* This also fixed the issue of features.section not expanding to contain the description paragraphs */
+}
+
+/* Styling for features icon */
+.features__icon {
+    width: 100%;
+    height: 175px;
+    /* Set a fixed height for icons */
+    border: 5px solid #3882F6;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    /* Space between icon and description */
+}
+
+/* Styling for features description text */
+.features__description {
+    text-align: center;
 }
