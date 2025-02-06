@@ -198,3 +198,49 @@ button.button--primary {
 .features__description {
     text-align: center;
 }
+
+/* Background styling to extend throughout the viewport */
+/* GOOD PRACTICE: Allows the background to span the full width of the viewport */
+.testimonial__background {
+    background-color: #E5E7EB;
+    width: 100%;
+    /* Extends the background to the full viewport width */
+}
+
+/* Container for consistent horizontal centering across the testimonials section */
+/* GOOD PRACTICE: Keeps layout responsive and horizontally centered */
+.testimonial__horizontal {
+    max-width: 2200px;
+    /* Controls the maximum width of the content */
+    margin: 0 auto;
+    /* Centers the content horizontally */
+    padding: 30px 150px;
+    /* Avoids fixed height, letting content define section heights naturally */
+}
+
+/* Testimonial blockquote */
+.testimonial__blockquote {
+    padding: 50px;
+}
+
+/* Testimonial quote text */
+.testimonial__quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    text-align: left;
+}
+
+/* Testimonial footer with author name */
+.testimonial__footer {
+    text-align: right;
+    padding-right: 100px;
+    /* Aligns the author name to the right */
+}
+
+/* Styling for testimonial author name */
+.testimonial__author {
+    font-weight: bold;
+    font-style: normal;
+}
