@@ -295,3 +295,26 @@ section.hero {
     border-style: solid;
     width: 10%;
 }
+
+/* Background styling to extend throughout the viewport */
+/* GOOD PRACTICE: Allows the background to span the full width of the viewport */
+.footer__background {
+    background-color: #1F2937;
+    width: 100%;
+    /* Extends the background to the full viewport width */
+}
+
+.footer__horizontal {
+    max-width: 2200px;
+    /* Controls the maximum width of the content */
+    margin: 0 auto;
+    /* Centers the content horizontally */
+    padding: 30px 150px;
+    /* Avoids fixed height, letting content define section heights naturally */
+}
+
+/* Styling for footer text */
+.footer__text {
+    color: #E5E7EB;
+    text-align: center;
+}
