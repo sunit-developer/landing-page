@@ -89,17 +89,21 @@ section.hero {
 
 /* Primary button styling */
 /* GOOD PRACTICE: Resets default styles and applies custom styles */
-button.button--primary {
+.button {
     all: unset;
     /* Removes default browser styles */
     text-align: center;
     /* Centers button text */
-    width: 25%;
-    background-color: #3882F6;
-    color: white;
+
     font-size: large;
     padding: 8px;
     border-radius: 8px;
+}
+
+.button--primary {
+    background-color: #3882F6;
+    color: white;
+    width: 25%;
 }
 
 /* Content wrapper styling for the hero section */
@@ -243,4 +247,51 @@ button.button--primary {
 .testimonial__author {
     font-weight: bold;
     font-style: normal;
+}
+
+/* Background styling to extend throughout the viewport */
+/* GOOD PRACTICE: Allows the background to span the full width of the viewport */
+.cta__background {
+    background-color: white;
+    width: 100%;
+    /* Extends the background to the full viewport width */
+}
+
+.cta__horizontal {
+    max-width: 2200px;
+    /* Controls the maximum width of the content */
+    margin: 0 auto;
+    /* Centers the content horizontally */
+    padding: 30px 150px;
+    /* Avoids fixed height, letting content define section heights naturally */
+}
+
+.cta {
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 30px 80px;
+    margin: 50px 0px;
+    justify-content: space-between;
+}
+
+/* Styling for cta header */
+.cta__header {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+/* Styling for cta subtext */
+.cta__subtext {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+/* Styling for cta button */
+.button--secondary {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    border-style: solid;
+    width: 10%;
 }
